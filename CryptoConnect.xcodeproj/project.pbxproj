@@ -15,6 +15,7 @@
 		2F8CA36E2AA660500040E468 /* CryptoConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA36D2AA660500040E468 /* CryptoConnectTests.swift */; };
 		2F8CA3782AA660500040E468 /* CryptoConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3772AA660500040E468 /* CryptoConnectUITests.swift */; };
 		2F8CA37A2AA660500040E468 /* CryptoConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3792AA660500040E468 /* CryptoConnectUITestsLaunchTests.swift */; };
+		2F8CA3882AA661560040E468 /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F8CA3872AA661560040E468 /* web3swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8CA3882AA661560040E468 /* web3swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,12 +99,17 @@
 		2F8CA3582AA6604E0040E468 /* CryptoConnect */ = {
 			isa = PBXGroup;
 			children = (
-				2F8CA3592AA6604E0040E468 /* CryptoConnectApp.swift */,
-				2F8CA35B2AA6604E0040E468 /* ContentView.swift */,
-				2F8CA35D2AA6604E0040E468 /* Item.swift */,
 				2F8CA35F2AA660500040E468 /* Assets.xcassets */,
+				2F8CA35B2AA6604E0040E468 /* ContentView.swift */,
 				2F8CA3612AA660500040E468 /* CryptoConnect.entitlements */,
+				2F8CA3592AA6604E0040E468 /* CryptoConnectApp.swift */,
+				2F8CA35D2AA6604E0040E468 /* Item.swift */,
+				2F8CA3892AA6616E0040E468 /* Models */,
+				2F8CA38C2AA661830040E468 /* Network */,
 				2F8CA3622AA660500040E468 /* Preview Content */,
+				2F8CA38D2AA661890040E468 /* Utils */,
+				2F8CA38B2AA6617C0040E468 /* ViewModels */,
+				2F8CA38A2AA661760040E468 /* Views */,
 			);
 			path = CryptoConnect;
 			sourceTree = "<group>";
@@ -132,6 +139,41 @@
 			path = CryptoConnectUITests;
 			sourceTree = "<group>";
 		};
+		2F8CA3892AA6616E0040E468 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F8CA38A2AA661760040E468 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2F8CA38B2AA6617C0040E468 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2F8CA38C2AA661830040E468 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2F8CA38D2AA661890040E468 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +190,9 @@
 			dependencies = (
 			);
 			name = CryptoConnect;
+			packageProductDependencies = (
+				2F8CA3872AA661560040E468 /* web3swift */,
+			);
 			productName = CryptoConnect;
 			productReference = 2F8CA3562AA6604E0040E468 /* CryptoConnect.app */;
 			productType = "com.apple.product-type.application";
@@ -220,6 +265,9 @@
 				Base,
 			);
 			mainGroup = 2F8CA34D2AA6604E0040E468;
+			packageReferences = (
+				2F8CA3862AA661560040E468 /* XCRemoteSwiftPackageReference "web3swift" */,
+			);
 			productRefGroup = 2F8CA3572AA6604E0040E468 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -621,6 +669,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F8CA3862AA661560040E468 /* XCRemoteSwiftPackageReference "web3swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/web3swift-team/web3swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F8CA3872AA661560040E468 /* web3swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F8CA3862AA661560040E468 /* XCRemoteSwiftPackageReference "web3swift" */;
+			productName = web3swift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2F8CA34E2AA6604E0040E468 /* Project object */;
 }
