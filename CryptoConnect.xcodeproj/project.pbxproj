@@ -16,6 +16,23 @@
 		2F8CA3782AA660500040E468 /* CryptoConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3772AA660500040E468 /* CryptoConnectUITests.swift */; };
 		2F8CA37A2AA660500040E468 /* CryptoConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3792AA660500040E468 /* CryptoConnectUITestsLaunchTests.swift */; };
 		2F8CA3882AA661560040E468 /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F8CA3872AA661560040E468 /* web3swift */; };
+		2F8CA38F2AA662880040E468 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA38E2AA662880040E468 /* User.swift */; };
+		2F8CA3912AA6628E0040E468 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3902AA6628E0040E468 /* Post.swift */; };
+		2F8CA3932AA662980040E468 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3922AA662980040E468 /* Comment.swift */; };
+		2F8CA3952AA662A50040E468 /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3942AA662A50040E468 /* Wallet.swift */; };
+		2F8CA3972AA6631D0040E468 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3962AA6631D0040E468 /* LoginView.swift */; };
+		2F8CA3992AA663250040E468 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3982AA663250040E468 /* HomeView.swift */; };
+		2F8CA39B2AA6634E0040E468 /* PostDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA39A2AA6634E0040E468 /* PostDetailView.swift */; };
+		2F8CA39D2AA663580040E468 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA39C2AA663580040E468 /* ProfileView.swift */; };
+		2F8CA3A02AA663680040E468 /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA39F2AA663680040E468 /* CreatePostView.swift */; };
+		2F8CA3A22AA663770040E468 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3A12AA663770040E468 /* AuthViewModel.swift */; };
+		2F8CA3A42AA6637F0040E468 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3A32AA6637F0040E468 /* HomeViewModel.swift */; };
+		2F8CA3A62AA663880040E468 /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3A52AA663880040E468 /* PostDetailViewModel.swift */; };
+		2F8CA3A82AA663900040E468 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3A72AA663900040E468 /* ProfileViewModel.swift */; };
+		2F8CA3AA2AA664EF0040E468 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3A92AA664EF0040E468 /* NetworkManager.swift */; };
+		2F8CA3AC2AA664F70040E468 /* Web3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3AB2AA664F70040E468 /* Web3Manager.swift */; };
+		2F8CA3AE2AA665040040E468 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3AD2AA665040040E468 /* Constants.swift */; };
+		2F8CA3B02AA6650B0040E468 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3AF2AA6650B0040E468 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +65,23 @@
 		2F8CA3732AA660500040E468 /* CryptoConnectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CryptoConnectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8CA3772AA660500040E468 /* CryptoConnectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoConnectUITests.swift; sourceTree = "<group>"; };
 		2F8CA3792AA660500040E468 /* CryptoConnectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoConnectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2F8CA38E2AA662880040E468 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2F8CA3902AA6628E0040E468 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		2F8CA3922AA662980040E468 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		2F8CA3942AA662A50040E468 /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		2F8CA3962AA6631D0040E468 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2F8CA3982AA663250040E468 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2F8CA39A2AA6634E0040E468 /* PostDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailView.swift; sourceTree = "<group>"; };
+		2F8CA39C2AA663580040E468 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		2F8CA39F2AA663680040E468 /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		2F8CA3A12AA663770040E468 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		2F8CA3A32AA6637F0040E468 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2F8CA3A52AA663880040E468 /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
+		2F8CA3A72AA663900040E468 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		2F8CA3A92AA664EF0040E468 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		2F8CA3AB2AA664F70040E468 /* Web3Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3Manager.swift; sourceTree = "<group>"; };
+		2F8CA3AD2AA665040040E468 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2F8CA3AF2AA6650B0040E468 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +134,6 @@
 			isa = PBXGroup;
 			children = (
 				2F8CA35F2AA660500040E468 /* Assets.xcassets */,
-				2F8CA35B2AA6604E0040E468 /* ContentView.swift */,
 				2F8CA3612AA660500040E468 /* CryptoConnect.entitlements */,
 				2F8CA3592AA6604E0040E468 /* CryptoConnectApp.swift */,
 				2F8CA35D2AA6604E0040E468 /* Item.swift */,
@@ -142,6 +175,10 @@
 		2F8CA3892AA6616E0040E468 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2F8CA38E2AA662880040E468 /* User.swift */,
+				2F8CA3902AA6628E0040E468 /* Post.swift */,
+				2F8CA3922AA662980040E468 /* Comment.swift */,
+				2F8CA3942AA662A50040E468 /* Wallet.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,6 +186,12 @@
 		2F8CA38A2AA661760040E468 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2F8CA35B2AA6604E0040E468 /* ContentView.swift */,
+				2F8CA3962AA6631D0040E468 /* LoginView.swift */,
+				2F8CA3982AA663250040E468 /* HomeView.swift */,
+				2F8CA39A2AA6634E0040E468 /* PostDetailView.swift */,
+				2F8CA39C2AA663580040E468 /* ProfileView.swift */,
+				2F8CA39F2AA663680040E468 /* CreatePostView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -156,6 +199,10 @@
 		2F8CA38B2AA6617C0040E468 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2F8CA3A12AA663770040E468 /* AuthViewModel.swift */,
+				2F8CA3A32AA6637F0040E468 /* HomeViewModel.swift */,
+				2F8CA3A52AA663880040E468 /* PostDetailViewModel.swift */,
+				2F8CA3A72AA663900040E468 /* ProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -163,6 +210,8 @@
 		2F8CA38C2AA661830040E468 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				2F8CA3A92AA664EF0040E468 /* NetworkManager.swift */,
+				2F8CA3AB2AA664F70040E468 /* Web3Manager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -170,6 +219,8 @@
 		2F8CA38D2AA661890040E468 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2F8CA3AD2AA665040040E468 /* Constants.swift */,
+				2F8CA3AF2AA6650B0040E468 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -310,9 +361,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F8CA3992AA663250040E468 /* HomeView.swift in Sources */,
+				2F8CA3AE2AA665040040E468 /* Constants.swift in Sources */,
+				2F8CA39B2AA6634E0040E468 /* PostDetailView.swift in Sources */,
+				2F8CA38F2AA662880040E468 /* User.swift in Sources */,
+				2F8CA3952AA662A50040E468 /* Wallet.swift in Sources */,
+				2F8CA3932AA662980040E468 /* Comment.swift in Sources */,
 				2F8CA35C2AA6604E0040E468 /* ContentView.swift in Sources */,
 				2F8CA35E2AA6604E0040E468 /* Item.swift in Sources */,
 				2F8CA35A2AA6604E0040E468 /* CryptoConnectApp.swift in Sources */,
+				2F8CA3A02AA663680040E468 /* CreatePostView.swift in Sources */,
+				2F8CA3A42AA6637F0040E468 /* HomeViewModel.swift in Sources */,
+				2F8CA3AC2AA664F70040E468 /* Web3Manager.swift in Sources */,
+				2F8CA3AA2AA664EF0040E468 /* NetworkManager.swift in Sources */,
+				2F8CA3972AA6631D0040E468 /* LoginView.swift in Sources */,
+				2F8CA39D2AA663580040E468 /* ProfileView.swift in Sources */,
+				2F8CA3B02AA6650B0040E468 /* Extensions.swift in Sources */,
+				2F8CA3A22AA663770040E468 /* AuthViewModel.swift in Sources */,
+				2F8CA3912AA6628E0040E468 /* Post.swift in Sources */,
+				2F8CA3A82AA663900040E468 /* ProfileViewModel.swift in Sources */,
+				2F8CA3A62AA663880040E468 /* PostDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
