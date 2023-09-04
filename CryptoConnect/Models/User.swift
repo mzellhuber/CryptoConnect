@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct User {
+    var walletAddress: String
+    var username: String
+    var email: String
+}

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F09F3392AA686FE0095317A /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09F3382AA686FE0095317A /* RegisterView.swift */; };
+		2F09F33C2AA69F5F0095317A /* AuthParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F09F33B2AA69F5F0095317A /* AuthParentView.swift */; };
 		2F8CA35A2AA6604E0040E468 /* CryptoConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3592AA6604E0040E468 /* CryptoConnectApp.swift */; };
 		2F8CA35C2AA6604E0040E468 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA35B2AA6604E0040E468 /* ContentView.swift */; };
 		2F8CA35E2AA6604E0040E468 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA35D2AA6604E0040E468 /* Item.swift */; };
@@ -15,7 +17,6 @@
 		2F8CA36E2AA660500040E468 /* CryptoConnectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA36D2AA660500040E468 /* CryptoConnectTests.swift */; };
 		2F8CA3782AA660500040E468 /* CryptoConnectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3772AA660500040E468 /* CryptoConnectUITests.swift */; };
 		2F8CA37A2AA660500040E468 /* CryptoConnectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3792AA660500040E468 /* CryptoConnectUITestsLaunchTests.swift */; };
-		2F8CA3882AA661560040E468 /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F8CA3872AA661560040E468 /* web3swift */; };
 		2F8CA38F2AA662880040E468 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA38E2AA662880040E468 /* User.swift */; };
 		2F8CA3912AA6628E0040E468 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3902AA6628E0040E468 /* Post.swift */; };
 		2F8CA3932AA662980040E468 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3922AA662980040E468 /* Comment.swift */; };
@@ -33,6 +34,10 @@
 		2F8CA3AC2AA664F70040E468 /* Web3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3AB2AA664F70040E468 /* Web3Manager.swift */; };
 		2F8CA3AE2AA665040040E468 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3AD2AA665040040E468 /* Constants.swift */; };
 		2F8CA3B02AA6650B0040E468 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3AF2AA6650B0040E468 /* Extensions.swift */; };
+		2F8CA3B32AA666AF0040E468 /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F8CA3B22AA666AF0040E468 /* web3swift */; };
+		2F8CA3B62AA66E7C0040E468 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3B52AA66E7C0040E468 /* Colors.swift */; };
+		2F8CA3B82AA66E8F0040E468 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3B72AA66E8F0040E468 /* Typography.swift */; };
+		2F8CA3BA2AA66EA40040E468 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3B92AA66EA40040E468 /* Components.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F09F3382AA686FE0095317A /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		2F09F33B2AA69F5F0095317A /* AuthParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthParentView.swift; sourceTree = "<group>"; };
 		2F8CA3562AA6604E0040E468 /* CryptoConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F8CA3592AA6604E0040E468 /* CryptoConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoConnectApp.swift; sourceTree = "<group>"; };
 		2F8CA35B2AA6604E0040E468 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,6 +89,9 @@
 		2F8CA3AB2AA664F70040E468 /* Web3Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3Manager.swift; sourceTree = "<group>"; };
 		2F8CA3AD2AA665040040E468 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2F8CA3AF2AA6650B0040E468 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2F8CA3B52AA66E7C0040E468 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		2F8CA3B72AA66E8F0040E468 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
+		2F8CA3B92AA66EA40040E468 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F8CA3882AA661560040E468 /* web3swift in Frameworks */,
+				2F8CA3B32AA666AF0040E468 /* web3swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +120,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F09F33A2AA69D490095317A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2F8CA3962AA6631D0040E468 /* LoginView.swift */,
+				2F09F3382AA686FE0095317A /* RegisterView.swift */,
+				2F09F33B2AA69F5F0095317A /* AuthParentView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		2F8CA34D2AA6604E0040E468 = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +160,7 @@
 				2F8CA3892AA6616E0040E468 /* Models */,
 				2F8CA38C2AA661830040E468 /* Network */,
 				2F8CA3622AA660500040E468 /* Preview Content */,
+				2F8CA3B42AA66E630040E468 /* Theme */,
 				2F8CA38D2AA661890040E468 /* Utils */,
 				2F8CA38B2AA6617C0040E468 /* ViewModels */,
 				2F8CA38A2AA661760040E468 /* Views */,
@@ -187,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				2F8CA35B2AA6604E0040E468 /* ContentView.swift */,
-				2F8CA3962AA6631D0040E468 /* LoginView.swift */,
+				2F09F33A2AA69D490095317A /* Auth */,
 				2F8CA3982AA663250040E468 /* HomeView.swift */,
 				2F8CA39A2AA6634E0040E468 /* PostDetailView.swift */,
 				2F8CA39C2AA663580040E468 /* ProfileView.swift */,
@@ -225,6 +246,16 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		2F8CA3B42AA66E630040E468 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2F8CA3B52AA66E7C0040E468 /* Colors.swift */,
+				2F8CA3B72AA66E8F0040E468 /* Typography.swift */,
+				2F8CA3B92AA66EA40040E468 /* Components.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,7 +273,7 @@
 			);
 			name = CryptoConnect;
 			packageProductDependencies = (
-				2F8CA3872AA661560040E468 /* web3swift */,
+				2F8CA3B22AA666AF0040E468 /* web3swift */,
 			);
 			productName = CryptoConnect;
 			productReference = 2F8CA3562AA6604E0040E468 /* CryptoConnect.app */;
@@ -317,7 +348,7 @@
 			);
 			mainGroup = 2F8CA34D2AA6604E0040E468;
 			packageReferences = (
-				2F8CA3862AA661560040E468 /* XCRemoteSwiftPackageReference "web3swift" */,
+				2F8CA3B12AA666AF0040E468 /* XCRemoteSwiftPackageReference "web3swift" */,
 			);
 			productRefGroup = 2F8CA3572AA6604E0040E468 /* Products */;
 			projectDirPath = "";
@@ -369,16 +400,21 @@
 				2F8CA3932AA662980040E468 /* Comment.swift in Sources */,
 				2F8CA35C2AA6604E0040E468 /* ContentView.swift in Sources */,
 				2F8CA35E2AA6604E0040E468 /* Item.swift in Sources */,
+				2F8CA3B82AA66E8F0040E468 /* Typography.swift in Sources */,
 				2F8CA35A2AA6604E0040E468 /* CryptoConnectApp.swift in Sources */,
+				2F8CA3BA2AA66EA40040E468 /* Components.swift in Sources */,
 				2F8CA3A02AA663680040E468 /* CreatePostView.swift in Sources */,
+				2F8CA3B62AA66E7C0040E468 /* Colors.swift in Sources */,
 				2F8CA3A42AA6637F0040E468 /* HomeViewModel.swift in Sources */,
 				2F8CA3AC2AA664F70040E468 /* Web3Manager.swift in Sources */,
 				2F8CA3AA2AA664EF0040E468 /* NetworkManager.swift in Sources */,
 				2F8CA3972AA6631D0040E468 /* LoginView.swift in Sources */,
 				2F8CA39D2AA663580040E468 /* ProfileView.swift in Sources */,
+				2F09F33C2AA69F5F0095317A /* AuthParentView.swift in Sources */,
 				2F8CA3B02AA6650B0040E468 /* Extensions.swift in Sources */,
 				2F8CA3A22AA663770040E468 /* AuthViewModel.swift in Sources */,
 				2F8CA3912AA6628E0040E468 /* Post.swift in Sources */,
+				2F09F3392AA686FE0095317A /* RegisterView.swift in Sources */,
 				2F8CA3A82AA663900040E468 /* ProfileViewModel.swift in Sources */,
 				2F8CA3A62AA663880040E468 /* PostDetailViewModel.swift in Sources */,
 			);
@@ -739,9 +775,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		2F8CA3862AA661560040E468 /* XCRemoteSwiftPackageReference "web3swift" */ = {
+		2F8CA3B12AA666AF0040E468 /* XCRemoteSwiftPackageReference "web3swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/web3swift-team/web3swift.git";
+			repositoryURL = "https://github.com/matter-labs/web3swift";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.2.0;
@@ -750,9 +786,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2F8CA3872AA661560040E468 /* web3swift */ = {
+		2F8CA3B22AA666AF0040E468 /* web3swift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 2F8CA3862AA661560040E468 /* XCRemoteSwiftPackageReference "web3swift" */;
+			package = 2F8CA3B12AA666AF0040E468 /* XCRemoteSwiftPackageReference "web3swift" */;
 			productName = web3swift;
 		};
 /* End XCSwiftPackageProductDependency section */
