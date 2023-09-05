@@ -20,9 +20,14 @@ class HomeViewModel: ObservableObject {
                     Post(id: UUID(), title: "Second Post", body: "This is the body of the second post.", timestamp: Date().addingTimeInterval(-3600)),
                     Post(id: UUID(), title: "Third Post", body: "This is the body of the third post.", timestamp: Date().addingTimeInterval(-7200))
                 ]
+        fetchPosts()
     }
     
     func fetchPosts() {
-            // Your code to fetch posts and assign to the posts property
+        self.posts = [
+                    Post(id: UUID(), title: "First Post", body: "This is the body of the first post.", timestamp: Date()),
+                    Post(id: UUID(), title: "Second Post", body: "This is the body of the second post.", timestamp: Date().addingTimeInterval(-3600)),
+                    Post(id: UUID(), title: "Third Post", body: "This is the body of the third post.", timestamp: Date().addingTimeInterval(-7200))
+                ]
         }
 }

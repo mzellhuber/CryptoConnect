@@ -14,48 +14,58 @@ struct HomeView: View {
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
         self.dateFormatter = DateFormatter()
-        self.dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        self.dateFormatter.dateStyle = .short
+        self.dateFormatter.timeStyle = .short
     }
 
     var body: some View {
         NavigationView {
-            ScrollView {
-                VStack(alignment: .leading, spacing: 20) {
-                    ForEach(viewModel.posts) { post in
-                        VStack(alignment: .leading, spacing: 10) {
-                            Text(post.title)
-                                .font(Typography.header)
-                                .foregroundColor(ColorPalette.primaryText)
-                            
-                            Text(dateFormatter.string(from: post.timestamp))
-                                .font(Typography.subtleText)
-                                .foregroundColor(ColorPalette.secondaryText)
-                            
-                            Text(post.body)
-                                .font(Typography.bodyText)
-                                .foregroundColor(ColorPalette.primaryText)
-                                .lineLimit(2)
+            GeometryReader { geometry in
+                ScrollView {
+                    LazyVStack(spacing: 20) {
+                        ForEach(viewModel.posts) { post in
+                            ZStack {
+                                ColorPalette.secondaryBackground
+                                    .cornerRadius(10)
+                                    .shadow(color: .gray.opacity(0.5), radius: 2, x: 0, y: 2)
+                                
+                                VStack(alignment: .leading, spacing: 10) {
+                                    Text(post.title)
+                                        .font(Typography.header)
+                                        .foregroundColor(ColorPalette.primaryText)
+                                        .padding([.top, .horizontal])
+                                    
+                                    Text(dateFormatter.string(from: post.timestamp))
+                                        .font(Typography.caption)
+                                        .foregroundColor(ColorPalette.secondaryText)
+                                        .padding(.horizontal)
+                                    
+                                    Text(post.body)
+                                        .font(Typography.bodyText)
+                                        .foregroundColor(ColorPalette.primaryText)
+                                        .lineLimit(3)
+                                        .padding([.bottom, .horizontal])
+                                }
+                            }
+                            .frame(width: geometry.size.width - 40)
                         }
-                        .padding()
-                        .background(ColorPalette.secondaryBackground)
-                        .cornerRadius(8)
-                        .padding(.horizontal)
+                    }
+                    .padding(.top, 20)
+                }
+                .background(ColorPalette.primaryBackground.edgesIgnoringSafeArea(.all))
+                .navigationBarTitleDisplayMode(.automatic)
+                .toolbar {
+                    ToolbarItem(placement: .principal) {
+                        Text("Home Feed")
+                            .font(Typography.header)
+                            .foregroundColor(ColorPalette.navigationText)
                     }
                 }
-                .padding(.top, 20)
-            }
-            .background(ColorPalette.primaryBackground.edgesIgnoringSafeArea(.all))
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text("Home Feed")
-                        .font(Typography.header)
-                        .foregroundColor(ColorPalette.navigationText)
+                .onAppear {
+                    viewModel.fetchPosts()
                 }
             }
-            .onAppear {
-                viewModel.fetchPosts()
-            }
+            .background(ColorPalette.primaryBackground.edgesIgnoringSafeArea(.all))
         }
     }
 }
