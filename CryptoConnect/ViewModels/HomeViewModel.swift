@@ -12,22 +12,29 @@ class HomeViewModel: ObservableObject {
     @Published var posts: [Post] = []
     
     init() {
-        // Here you can initialize your posts array with some data,
-        // or fetch the data from a network request.
-        // For now, I'm adding some dummy data.
-        self.posts = [
-                    Post(id: UUID(), title: "First Post", body: "This is the body of the first post.", timestamp: Date()),
-                    Post(id: UUID(), title: "Second Post", body: "This is the body of the second post.", timestamp: Date().addingTimeInterval(-3600)),
-                    Post(id: UUID(), title: "Third Post", body: "This is the body of the third post.", timestamp: Date().addingTimeInterval(-7200))
-                ]
         fetchPosts()
     }
     
     func fetchPosts() {
+        let comments1 = [
+            Comment(id: UUID(), username: "User1", timestamp: Date(), body: "Great post!"),
+            Comment(id: UUID(), username: "User2", timestamp: Date(), body: "Very informative, thanks!")
+        ]
+        
+        let comments2 = [
+            Comment(id: UUID(), username: "User3", timestamp: Date(), body: "Interesting perspective."),
+            Comment(id: UUID(), username: "User4", timestamp: Date(), body: "Thanks for sharing!")
+        ]
+        
+        let comments3 = [
+            Comment(id: UUID(), username: "User5", timestamp: Date(), body: "I agree with this."),
+            Comment(id: UUID(), username: "User6", timestamp: Date(), body: "Well written!")
+        ]
+        
         self.posts = [
-                    Post(id: UUID(), title: "First Post", body: "This is the body of the first post.", timestamp: Date()),
-                    Post(id: UUID(), title: "Second Post", body: "This is the body of the second post.", timestamp: Date().addingTimeInterval(-3600)),
-                    Post(id: UUID(), title: "Third Post", body: "This is the body of the third post.", timestamp: Date().addingTimeInterval(-7200))
-                ]
-        }
+            Post(id: UUID(), title: "First Post", body: "This is the body of the first post.", timestamp: Date(), comments: comments1),
+            Post(id: UUID(), title: "Second Post", body: "This is the body of the second post.", timestamp: Date().addingTimeInterval(-3600), comments: comments2),
+            Post(id: UUID(), title: "Third Post", body: "This is the body of the third post.", timestamp: Date().addingTimeInterval(-7200), comments: comments3)
+        ]
+    }
 }

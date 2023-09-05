@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Comment: Identifiable {
+    let id: UUID
+    let username: String
+    let timestamp: Date
+    let body: String
+}

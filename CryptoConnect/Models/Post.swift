@@ -12,4 +12,5 @@ struct Post: Identifiable {
     let title: String
     let body: String
     let timestamp: Date
+    var comments: [Comment]
 }
