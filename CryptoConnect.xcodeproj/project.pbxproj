@@ -38,6 +38,7 @@
 		2F8CA3B62AA66E7C0040E468 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3B52AA66E7C0040E468 /* Colors.swift */; };
 		2F8CA3B82AA66E8F0040E468 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3B72AA66E8F0040E468 /* Typography.swift */; };
 		2F8CA3BA2AA66EA40040E468 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3B92AA66EA40040E468 /* Components.swift */; };
+		2FC6C93A2AA7902E00A5970E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6C9392AA7902E00A5970E /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		2F8CA3B52AA66E7C0040E468 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2F8CA3B72AA66E8F0040E468 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		2F8CA3B92AA66EA40040E468 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		2FC6C9392AA7902E00A5970E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +215,7 @@
 				2F8CA39A2AA6634E0040E468 /* PostDetailView.swift */,
 				2F8CA39C2AA663580040E468 /* ProfileView.swift */,
 				2F8CA39F2AA663680040E468 /* CreatePostView.swift */,
+				2FC6C9392AA7902E00A5970E /* MainTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				2F8CA3952AA662A50040E468 /* Wallet.swift in Sources */,
 				2F8CA3932AA662980040E468 /* Comment.swift in Sources */,
 				2F8CA35C2AA6604E0040E468 /* ContentView.swift in Sources */,
+				2FC6C93A2AA7902E00A5970E /* MainTabView.swift in Sources */,
 				2F8CA35E2AA6604E0040E468 /* Item.swift in Sources */,
 				2F8CA3B82AA66E8F0040E468 /* Typography.swift in Sources */,
 				2F8CA35A2AA6604E0040E468 /* CryptoConnectApp.swift in Sources */,

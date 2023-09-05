@@ -8,15 +8,7 @@
 import SwiftUI
 
 struct PostDetailView: View {
-    let post: Post
-    private let dateFormatter: DateFormatter
-    
-    init(post: Post) {
-        self.post = post
-        self.dateFormatter = DateFormatter()
-        self.dateFormatter.dateStyle = .short
-        self.dateFormatter.timeStyle = .short
-    }
+    @ObservedObject var viewModel: PostDetailViewModel
     
     var body: some View {
         NavigationView {
@@ -29,17 +21,17 @@ struct PostDetailView: View {
                                 .shadow(color: .gray.opacity(0.5), radius: 2, x: 0, y: 2)
                             
                             VStack(alignment: .center, spacing: 10) {
-                                Text(post.title)
+                                Text(viewModel.post.title)
                                     .font(Typography.header)
                                     .foregroundColor(ColorPalette.primaryText)
                                     .padding()
                                 
-                                Text(dateFormatter.string(from: post.timestamp))
+                                Text(viewModel.formattedDate)
                                     .font(Typography.caption)
                                     .foregroundColor(ColorPalette.secondaryText)
                                     .padding()
                                 
-                                Text(post.body)
+                                Text(viewModel.post.body)
                                     .font(Typography.bodyText)
                                     .foregroundColor(ColorPalette.primaryText)
                                     .padding()
@@ -49,29 +41,8 @@ struct PostDetailView: View {
                         
                         ScrollView(.vertical, showsIndicators: false) {
                             VStack(alignment: .center, spacing: 20) {
-                                ForEach(post.comments) { comment in
-                                    ZStack {
-                                        ColorPalette.secondaryBackground
-                                            .cornerRadius(10)
-                                            .shadow(color: .gray.opacity(0.5), radius: 2, x: 0, y: 2)
-                                        
-                                        VStack(alignment: .center, spacing: 10) {
-                                            Text(comment.username)
-                                                .font(Typography.bodyText)
-                                                .foregroundColor(ColorPalette.primaryText)
-                                                .padding(.top)
-                                            
-                                            Text(dateFormatter.string(from: comment.timestamp))
-                                                .font(Typography.caption)
-                                                .foregroundColor(ColorPalette.secondaryText)
-                                            
-                                            Text(comment.body)
-                                                .font(Typography.bodyText)
-                                                .foregroundColor(ColorPalette.primaryText)
-                                                .padding(.bottom)
-                                        }
-                                        .padding(.horizontal)
-                                    }
+                                ForEach(viewModel.post.comments) { comment in
+                                    CommentView(comment: comment)
                                 }
                             }
                         }
@@ -86,8 +57,46 @@ struct PostDetailView: View {
                             .foregroundColor(ColorPalette.navigationText)
                     }
                 }
+                .onAppear {
+                    viewModel.fetchPostDetails()
+                }
             }
             .background(ColorPalette.primaryBackground.edgesIgnoringSafeArea(.all))
+        }
+    }
+}
+
+struct CommentView: View {
+    let comment: Comment
+    private let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .short
+        formatter.timeStyle = .short
+        return formatter
+    }()
+    
+    var body: some View {
+        ZStack {
+            ColorPalette.secondaryBackground
+                .cornerRadius(10)
+                .shadow(color: .gray.opacity(0.5), radius: 2, x: 0, y: 2)
+            
+            VStack(alignment: .center, spacing: 10) {
+                Text(comment.username)
+                    .font(Typography.bodyText)
+                    .foregroundColor(ColorPalette.primaryText)
+                    .padding(.top)
+                
+                Text(dateFormatter.string(from: comment.timestamp))
+                    .font(Typography.caption)
+                    .foregroundColor(ColorPalette.secondaryText)
+                
+                Text(comment.body)
+                    .font(Typography.bodyText)
+                    .foregroundColor(ColorPalette.primaryText)
+                    .padding(.bottom)
+            }
+            .padding(.horizontal)
         }
     }
 }
@@ -108,6 +117,8 @@ struct PostDetailView_Previews: PreviewProvider {
             Comment(id: UUID(), username: "User11", timestamp: Date(), body: "Thanks for sharing this! I'm definitely going to try this out."),
             Comment(id: UUID(), username: "User12", timestamp: Date(), body: "This is amazing! I can't believe I didn't know about this before.")
         ])
-        PostDetailView(post: post)
+        
+        let postViewModel = PostDetailViewModel(post: post)
+        PostDetailView(viewModel: postViewModel)
     }
 }
