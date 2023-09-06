@@ -10,8 +10,30 @@ import web3swift
 import BigInt
 import Web3Core
 
-class Web3Manager {
+enum Web3ManagerError: Error, LocalizedError {
+    case invalidPrivateKey
+    case invalidKeystore
+    case transactionFailed
+    case unableToFetchBalance
+    case unableToFetchTransactionDetails
 
+    var errorDescription: String? {
+        switch self {
+        case .invalidPrivateKey:
+            return "The provided private key is invalid."
+        case .invalidKeystore:
+            return "Unable to create or import keystore."
+        case .transactionFailed:
+            return "Transaction failed."
+        case .unableToFetchBalance:
+            return "Unable to fetch balance."
+        case .unableToFetchTransactionDetails:
+            return "Unable to fetch transaction details."
+        }
+    }
+}
+
+class Web3Manager {
     let web3: Web3
 
     init(provider: Web3Provider) {
@@ -19,7 +41,9 @@ class Web3Manager {
     }
 
     func createWallet(password: String) async throws -> EthereumKeystoreV3 {
-        let keystore = try EthereumKeystoreV3(password: password)!
+        guard let keystore = try? EthereumKeystoreV3(password: password) else {
+            throw Web3ManagerError.invalidKeystore
+        }
         let keystoreManager = KeystoreManager([keystore])
         web3.addKeystoreManager(keystoreManager)
         return keystore
@@ -27,15 +51,21 @@ class Web3Manager {
 
     func importWallet(privateKey: String, password: String) async throws -> EthereumKeystoreV3 {
         let dataKey = Data(hex: privateKey)
-        let keystore = try EthereumKeystoreV3(privateKey: dataKey, password: password)!
+        guard let keystore = try? EthereumKeystoreV3(privateKey: dataKey, password: password) else {
+            throw Web3ManagerError.invalidPrivateKey
+        }
         let keystoreManager = KeystoreManager([keystore])
         web3.addKeystoreManager(keystoreManager)
         return keystore
     }
 
     func getBalance(address: EthereumAddress) async throws -> BigUInt {
-        let balance = try await web3.eth.getBalance(for: address, onBlock: .latest)
-        return balance
+        do {
+            let balance = try await web3.eth.getBalance(for: address, onBlock: .latest)
+            return balance
+        } catch {
+            throw Web3ManagerError.unableToFetchBalance
+        }
     }
 
     func sendTransaction(to: EthereumAddress, value: BigUInt, gasPrice: BigUInt, gasLimit: BigUInt) async throws -> TransactionSendingResult {
@@ -44,12 +74,20 @@ class Web3Manager {
         transaction.gasPrice = gasPrice
         transaction.gasLimit = gasLimit
 
-        let sendingResult = try await web3.eth.send(transaction)
-        return sendingResult
+        do {
+            let sendingResult = try await web3.eth.send(transaction)
+            return sendingResult
+        } catch {
+            throw Web3ManagerError.transactionFailed
+        }
     }
 
     func getTransactionDetails(txHash: Data) async throws -> TransactionDetails {
-        let transactionDetails = try await web3.eth.transactionDetails(txHash)
-        return transactionDetails
+        do {
+            let transactionDetails = try await web3.eth.transactionDetails(txHash)
+            return transactionDetails
+        } catch {
+            throw Web3ManagerError.unableToFetchTransactionDetails
+        }
     }
 }
