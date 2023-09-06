@@ -1,8 +1,8 @@
 //
-//  Components.swift
+//  CustomButton.swift
 //  CryptoConnect
 //
-//  Created by Melissa Zellhuber on 04/09/23.
+//  Created by Melissa Zellhuber on 06/09/23.
 //
 
 import SwiftUI
@@ -22,4 +22,8 @@ struct CustomButton: View {
                 .cornerRadius(8)
         })
     }
+}
+
+#Preview {
+    CustomButton(title: "Test", action: {})
 }

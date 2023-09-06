@@ -31,14 +31,14 @@
 		2F8CA3A62AA663880040E468 /* PostDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3A52AA663880040E468 /* PostDetailViewModel.swift */; };
 		2F8CA3A82AA663900040E468 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3A72AA663900040E468 /* ProfileViewModel.swift */; };
 		2F8CA3AA2AA664EF0040E468 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3A92AA664EF0040E468 /* NetworkManager.swift */; };
-		2F8CA3AC2AA664F70040E468 /* Web3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3AB2AA664F70040E468 /* Web3Manager.swift */; };
 		2F8CA3AE2AA665040040E468 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3AD2AA665040040E468 /* Constants.swift */; };
 		2F8CA3B02AA6650B0040E468 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3AF2AA6650B0040E468 /* Extensions.swift */; };
 		2F8CA3B32AA666AF0040E468 /* web3swift in Frameworks */ = {isa = PBXBuildFile; productRef = 2F8CA3B22AA666AF0040E468 /* web3swift */; };
 		2F8CA3B62AA66E7C0040E468 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3B52AA66E7C0040E468 /* Colors.swift */; };
 		2F8CA3B82AA66E8F0040E468 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3B72AA66E8F0040E468 /* Typography.swift */; };
-		2F8CA3BA2AA66EA40040E468 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3B92AA66EA40040E468 /* Components.swift */; };
 		2FB3EA322AA8FB4B00EAA73F /* CreatePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3EA312AA8FB4B00EAA73F /* CreatePostViewModel.swift */; };
+		2FB3EA352AA8FE2D00EAA73F /* Web3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3EA342AA8FE2D00EAA73F /* Web3Manager.swift */; };
+		2FB3EA382AA8FE6200EAA73F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3EA372AA8FE6200EAA73F /* CustomButton.swift */; };
 		2FC6C93A2AA7902E00A5970E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6C9392AA7902E00A5970E /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,13 +88,13 @@
 		2F8CA3A52AA663880040E468 /* PostDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewModel.swift; sourceTree = "<group>"; };
 		2F8CA3A72AA663900040E468 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		2F8CA3A92AA664EF0040E468 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		2F8CA3AB2AA664F70040E468 /* Web3Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3Manager.swift; sourceTree = "<group>"; };
 		2F8CA3AD2AA665040040E468 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2F8CA3AF2AA6650B0040E468 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2F8CA3B52AA66E7C0040E468 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2F8CA3B72AA66E8F0040E468 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
-		2F8CA3B92AA66EA40040E468 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
 		2FB3EA312AA8FB4B00EAA73F /* CreatePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewModel.swift; sourceTree = "<group>"; };
+		2FB3EA342AA8FE2D00EAA73F /* Web3Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3Manager.swift; sourceTree = "<group>"; };
+		2FB3EA372AA8FE6200EAA73F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		2FC6C9392AA7902E00A5970E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,11 +158,12 @@
 			isa = PBXGroup;
 			children = (
 				2F8CA35F2AA660500040E468 /* Assets.xcassets */,
+				2FB3EA362AA8FE4600EAA73F /* Components */,
 				2F8CA3612AA660500040E468 /* CryptoConnect.entitlements */,
 				2F8CA3592AA6604E0040E468 /* CryptoConnectApp.swift */,
 				2F8CA35D2AA6604E0040E468 /* Item.swift */,
+				2FB3EA332AA8FE1600EAA73F /* Managers */,
 				2F8CA3892AA6616E0040E468 /* Models */,
-				2F8CA38C2AA661830040E468 /* Network */,
 				2F8CA3622AA660500040E468 /* Preview Content */,
 				2F8CA3B42AA66E630040E468 /* Theme */,
 				2F8CA38D2AA661890040E468 /* Utils */,
@@ -234,15 +235,6 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
-		2F8CA38C2AA661830040E468 /* Network */ = {
-			isa = PBXGroup;
-			children = (
-				2F8CA3A92AA664EF0040E468 /* NetworkManager.swift */,
-				2F8CA3AB2AA664F70040E468 /* Web3Manager.swift */,
-			);
-			path = Network;
-			sourceTree = "<group>";
-		};
 		2F8CA38D2AA661890040E468 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,9 +249,25 @@
 			children = (
 				2F8CA3B52AA66E7C0040E468 /* Colors.swift */,
 				2F8CA3B72AA66E8F0040E468 /* Typography.swift */,
-				2F8CA3B92AA66EA40040E468 /* Components.swift */,
 			);
 			path = Theme;
+			sourceTree = "<group>";
+		};
+		2FB3EA332AA8FE1600EAA73F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2FB3EA342AA8FE2D00EAA73F /* Web3Manager.swift */,
+				2F8CA3A92AA664EF0040E468 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2FB3EA362AA8FE4600EAA73F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2FB3EA372AA8FE6200EAA73F /* CustomButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,6 +410,7 @@
 				2F8CA3AE2AA665040040E468 /* Constants.swift in Sources */,
 				2F8CA39B2AA6634E0040E468 /* PostDetailView.swift in Sources */,
 				2F8CA38F2AA662880040E468 /* User.swift in Sources */,
+				2FB3EA382AA8FE6200EAA73F /* CustomButton.swift in Sources */,
 				2F8CA3952AA662A50040E468 /* Wallet.swift in Sources */,
 				2F8CA3932AA662980040E468 /* Comment.swift in Sources */,
 				2F8CA35C2AA6604E0040E468 /* ContentView.swift in Sources */,
@@ -409,11 +418,10 @@
 				2F8CA35E2AA6604E0040E468 /* Item.swift in Sources */,
 				2F8CA3B82AA66E8F0040E468 /* Typography.swift in Sources */,
 				2F8CA35A2AA6604E0040E468 /* CryptoConnectApp.swift in Sources */,
-				2F8CA3BA2AA66EA40040E468 /* Components.swift in Sources */,
 				2F8CA3A02AA663680040E468 /* CreatePostView.swift in Sources */,
 				2F8CA3B62AA66E7C0040E468 /* Colors.swift in Sources */,
 				2F8CA3A42AA6637F0040E468 /* HomeViewModel.swift in Sources */,
-				2F8CA3AC2AA664F70040E468 /* Web3Manager.swift in Sources */,
+				2FB3EA352AA8FE2D00EAA73F /* Web3Manager.swift in Sources */,
 				2F8CA3AA2AA664EF0040E468 /* NetworkManager.swift in Sources */,
 				2FB3EA322AA8FB4B00EAA73F /* CreatePostViewModel.swift in Sources */,
 				2F8CA3972AA6631D0040E468 /* LoginView.swift in Sources */,
