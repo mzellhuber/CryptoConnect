@@ -100,25 +100,3 @@ struct CommentView: View {
         }
     }
 }
-
-struct PostDetailView_Previews: PreviewProvider {
-    static var previews: some View {
-        let post = Post(id: UUID(), title: "Sample Post", body: "This is a sample post.", timestamp: Date(), comments: [
-            Comment(id: UUID(), username: "User1", timestamp: Date(), body: "Great post!"),
-            Comment(id: UUID(), username: "User2", timestamp: Date(), body: "Very informative, thanks!"),
-            Comment(id: UUID(), username: "User3", timestamp: Date(), body: "Great post! I learned a lot."),
-            Comment(id: UUID(), username: "User4", timestamp: Date(), body: "This is very helpful. Thank you for sharing."),
-            Comment(id: UUID(), username: "User5", timestamp: Date(), body: "I'm glad you found this post helpful."),
-            Comment(id: UUID(), username: "User6", timestamp: Date(), body: "I have a question about this. Can you help me?"),
-            Comment(id: UUID(), username: "User7", timestamp: Date(), body: "I'm also interested in this topic. Can you share more information?"),
-            Comment(id: UUID(), username: "User8", timestamp: Date(), body: "This is a great discussion. I'm glad I found this post."),
-            Comment(id: UUID(), username: "User9", timestamp: Date(), body: "I'm new to this topic. Can you recommend some resources?"),
-            Comment(id: UUID(), username: "User10", timestamp: Date(), body: "I'm so glad I found this post. It's exactly what I was looking for."),
-            Comment(id: UUID(), username: "User11", timestamp: Date(), body: "Thanks for sharing this! I'm definitely going to try this out."),
-            Comment(id: UUID(), username: "User12", timestamp: Date(), body: "This is amazing! I can't believe I didn't know about this before.")
-        ])
-        
-        let postViewModel = PostDetailViewModel(post: post)
-        PostDetailView(viewModel: postViewModel)
-    }
-}

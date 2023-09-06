@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import BigInt
 
 struct Post: Identifiable {
     let id: UUID
@@ -13,4 +14,6 @@ struct Post: Identifiable {
     let body: String
     let timestamp: Date
     var comments: [Comment]
+    var donations: BigUInt
+    let owner: User
 }
