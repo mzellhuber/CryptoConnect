@@ -38,6 +38,7 @@
 		2F8CA3B62AA66E7C0040E468 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3B52AA66E7C0040E468 /* Colors.swift */; };
 		2F8CA3B82AA66E8F0040E468 /* Typography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3B72AA66E8F0040E468 /* Typography.swift */; };
 		2F8CA3BA2AA66EA40040E468 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8CA3B92AA66EA40040E468 /* Components.swift */; };
+		2FB3EA322AA8FB4B00EAA73F /* CreatePostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3EA312AA8FB4B00EAA73F /* CreatePostViewModel.swift */; };
 		2FC6C93A2AA7902E00A5970E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6C9392AA7902E00A5970E /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		2F8CA3B52AA66E7C0040E468 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		2F8CA3B72AA66E8F0040E468 /* Typography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typography.swift; sourceTree = "<group>"; };
 		2F8CA3B92AA66EA40040E468 /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		2FB3EA312AA8FB4B00EAA73F /* CreatePostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewModel.swift; sourceTree = "<group>"; };
 		2FC6C9392AA7902E00A5970E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -227,6 +229,7 @@
 				2F8CA3A32AA6637F0040E468 /* HomeViewModel.swift */,
 				2F8CA3A52AA663880040E468 /* PostDetailViewModel.swift */,
 				2F8CA3A72AA663900040E468 /* ProfileViewModel.swift */,
+				2FB3EA312AA8FB4B00EAA73F /* CreatePostViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				2F8CA3A42AA6637F0040E468 /* HomeViewModel.swift in Sources */,
 				2F8CA3AC2AA664F70040E468 /* Web3Manager.swift in Sources */,
 				2F8CA3AA2AA664EF0040E468 /* NetworkManager.swift in Sources */,
+				2FB3EA322AA8FB4B00EAA73F /* CreatePostViewModel.swift in Sources */,
 				2F8CA3972AA6631D0040E468 /* LoginView.swift in Sources */,
 				2F8CA39D2AA663580040E468 /* ProfileView.swift in Sources */,
 				2F09F33C2AA69F5F0095317A /* AuthParentView.swift in Sources */,
