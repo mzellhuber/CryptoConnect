@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import BigInt
 
 struct PostDetailView: View {
     @ObservedObject var viewModel: PostDetailViewModel
@@ -66,37 +67,19 @@ struct PostDetailView: View {
     }
 }
 
-struct CommentView: View {
-    let comment: Comment
-    private let dateFormatter: DateFormatter = {
-        let formatter = DateFormatter()
-        formatter.dateStyle = .short
-        formatter.timeStyle = .short
-        return formatter
-    }()
-    
-    var body: some View {
-        ZStack {
-            ColorPalette.secondaryBackground
-                .cornerRadius(10)
-                .shadow(color: .gray.opacity(0.5), radius: 2, x: 0, y: 2)
-            
-            VStack(alignment: .center, spacing: 10) {
-                Text(comment.username)
-                    .font(Typography.bodyText)
-                    .foregroundColor(ColorPalette.primaryText)
-                    .padding(.top)
-                
-                Text(dateFormatter.string(from: comment.timestamp))
-                    .font(Typography.caption)
-                    .foregroundColor(ColorPalette.secondaryText)
-                
-                Text(comment.body)
-                    .font(Typography.bodyText)
-                    .foregroundColor(ColorPalette.primaryText)
-                    .padding(.bottom)
-            }
-            .padding(.horizontal)
-        }
+struct PostDetailView_Previews: PreviewProvider {
+    static var previews: some View {
+        let sampleUser = User(walletAddress: "0x1234567890abcdef", username: "JohnDoe", email: "john.doe@example.com")
+        
+        let sampleComments = [
+            Comment(id: UUID(), username: "Commenter1", timestamp: Date(), body: "This is a comment."),
+            Comment(id: UUID(), username: "Commenter2", timestamp: Date(), body: "This is another comment.")
+        ]
+        
+        let samplePost = Post(id: UUID(), title: "Sample Post", body: "This is a sample post body.", timestamp: Date(), comments: sampleComments, donations: BigUInt(100), owner: sampleUser)
+        
+        let viewModel = PostDetailViewModel(post: samplePost)
+        
+        return PostDetailView(viewModel: viewModel)
     }
 }

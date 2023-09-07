@@ -11,13 +11,13 @@ import Web3Core
 import web3swift
 
 struct TipModalView: View {
-    @StateObject private var web3Manager = Web3Manager()
+    @Binding var isPresented: Bool
     @State private var tipAmount: String = ""
     @State private var transactionResult: String?
     @State private var showingAlert = false
+    var receiverAddress: EthereumAddress
+    @StateObject var web3Manager: Web3Manager
     
-    var receiverAddress: EthereumAddress // The Ethereum address of the post creator
-
     var body: some View {
         VStack {
             Text("Tip Amount")

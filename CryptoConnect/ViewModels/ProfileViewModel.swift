@@ -8,12 +8,14 @@
 import Foundation
 import SwiftUI
 import Combine
+import Web3Core
 
 class ProfileViewModel: ObservableObject {
     @Published var username: String = "John Doe"
     @Published var email: String = "john.doe@example.com"
     @Published var profilePicture: Image = Image(systemName: "person.circle")
-    
+    @Published var walletAddress: EthereumAddress?
+
     // Add other user profile properties here
     
     init() {
@@ -22,5 +24,6 @@ class ProfileViewModel: ObservableObject {
     
     func fetchUserProfile() {
         // Your code to fetch user profile data and assign to the properties
+        // Don't forget to fetch and assign the wallet address here
     }
 }

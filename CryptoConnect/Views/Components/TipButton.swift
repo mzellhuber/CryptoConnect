@@ -11,8 +11,8 @@ import Web3Core
 struct TipButton: View {
     @State private var isTipModalPresented: Bool = false
     @State private var tipAmount: String = ""
-    var post: Post
-    @ObservedObject var web3Manager: Web3Manager
+    var walletAddress: EthereumAddress
+    @StateObject var web3Manager: Web3Manager
 
     var body: some View {
         Button(action: {
@@ -27,11 +27,7 @@ struct TipButton: View {
             .cornerRadius(8)
         }
         .sheet(isPresented: $isTipModalPresented) {
-            if let receiverAddress = EthereumAddress(post.owner.walletAddress) {
-                TipModalView(receiverAddress: receiverAddress)
-            } else {
-                // Handle invalid address error
-            }
+            TipModalView(isPresented: $isTipModalPresented, receiverAddress: walletAddress, web3Manager: web3Manager)
         }
     }
 }

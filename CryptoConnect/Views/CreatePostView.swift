@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CreatePostView: View {
-    @StateObject private var viewModel = CreatePostViewModel()
+    @StateObject var viewModel = CreatePostViewModel()
     
     @State private var postTitle = ""
     @State private var postBody = ""

@@ -41,6 +41,7 @@
 		2FB3EA382AA8FE6200EAA73F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3EA372AA8FE6200EAA73F /* CustomButton.swift */; };
 		2FB3EA3A2AA9132F00EAA73F /* TipButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3EA392AA9132F00EAA73F /* TipButton.swift */; };
 		2FB3EA3C2AA9134D00EAA73F /* TipModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB3EA3B2AA9134D00EAA73F /* TipModalView.swift */; };
+		2FB5D6FC2AA9566F00AD3907 /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB5D6FB2AA9566F00AD3907 /* CommentView.swift */; };
 		2FC6C93A2AA7902E00A5970E /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC6C9392AA7902E00A5970E /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
@@ -99,6 +100,7 @@
 		2FB3EA372AA8FE6200EAA73F /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		2FB3EA392AA9132F00EAA73F /* TipButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipButton.swift; sourceTree = "<group>"; };
 		2FB3EA3B2AA9134D00EAA73F /* TipModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipModalView.swift; sourceTree = "<group>"; };
+		2FB5D6FB2AA9566F00AD3907 /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		2FC6C9392AA7902E00A5970E /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +225,7 @@
 				2F8CA39C2AA663580040E468 /* ProfileView.swift */,
 				2F8CA39F2AA663680040E468 /* CreatePostView.swift */,
 				2FC6C9392AA7902E00A5970E /* MainTabView.swift */,
+				2FB5D6FB2AA9566F00AD3907 /* CommentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -430,6 +433,7 @@
 				2F8CA3B62AA66E7C0040E468 /* Colors.swift in Sources */,
 				2F8CA3A42AA6637F0040E468 /* HomeViewModel.swift in Sources */,
 				2FB3EA352AA8FE2D00EAA73F /* Web3Manager.swift in Sources */,
+				2FB5D6FC2AA9566F00AD3907 /* CommentView.swift in Sources */,
 				2F8CA3AA2AA664EF0040E468 /* NetworkManager.swift in Sources */,
 				2FB3EA322AA8FB4B00EAA73F /* CreatePostViewModel.swift in Sources */,
 				2F8CA3972AA6631D0040E468 /* LoginView.swift in Sources */,
